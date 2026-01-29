@@ -32,7 +32,9 @@ Es una herramienta útil para meteorólogos, hidrólogos, estudiantes e investig
 
 ```bash
 pip install requests
+pip install git+https://github.com/MaicolDLC/senamhi-query.git
 
+from senamhi-query import get_station
 ```
 ## 🚀 Uso básico
 
