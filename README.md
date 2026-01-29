@@ -127,7 +127,7 @@ for e in emas:
 EMA: 4726602
 ```
 ## Variables existentes 
-```bash
+```python
 res[0].keys()
 ```
 ```text
