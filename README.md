@@ -42,7 +42,7 @@ from senamhi_query import get_station
 
 ## Buscar por nombre de estación
 ```bash
-get_station("cutervo")
+estacion = get_station("cutervo")
 ```
 ## Ejemplo de salida 
 
@@ -66,9 +66,9 @@ Lat / Lon  : -6.37914 , -78.81339
 
 ## Buscar por código de estación 
 ```bash
-get_station("106057")
+estacion = get_station("106057")
 o
-get_station(106057)
+estacion = get_station(106057)
 ```
 ## Ejemplo de salida 
 
@@ -84,7 +84,7 @@ Lat / Lon  : -6.37964 , -78.80512
 
 ## Buscar por segmento de palabra 
 ```bash
-get_station("tocache")
+estacion = get_station("tocache")
 ```
 
 ## Ejemplo de salida 
@@ -107,6 +107,25 @@ Lat / Lon  : -8.18475 , -76.50789
 ---------------------------------------------------------------------------
 ```
 
+## Utilizar variable 
+```bash
+estacion = get_station("cutervo")
+codigos = [e["codigo"] for e in res]
+print("Códigos encontrados:", codigos)
+```
+```text
+Códigos encontrados: ['106057', '4726602']
+```
+```
+# Tomar solo estaciones automáticas
+emas = [e for e in res if e["estado"] == "AUTOMATICA"]
+
+for e in emas:
+    print("EMA:", e["codigo"]) 
+```
+```text
+EMA: 4726602
+```
 
 ## 📊 Tipos de estaciones SENAMHI 
 
