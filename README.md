@@ -186,5 +186,5 @@ dict_keys(['estacion', 'categoria', 'lat', 'lon', 'ico', 'codigo', 'estado_srv',
 
 ✉️ : michael.dlc.lr@gmail.com / 20180176@lamolina.edu.pe 
 
-Mi pequeño aporte para la comunidad Meteorológica del Perú. 
+ Para la comunidad Meteorológica del Perú. 
 --- 
