@@ -1,2 +1,2 @@
-from .core import consultar_estacion_senamhi
+from .core import senamhi-query
 
